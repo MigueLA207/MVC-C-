@@ -1,0 +1,67 @@
+@page
+@model test_cs.Views.Users.Index
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Holita</title>
+    
+</head>
+<body>
+<div>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1>Listado de usuarios</h1>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userModal">Crear usuario</button>
+    </div>
+    <table class="table table-striped border">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td><button class="btn btn-outline-success">Detalles</button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+      
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="userModalLabel">Crear usuario</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+
+            <div class="modal-body">
+                <form id="userForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ingrese el nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Apellido</label>
+                        <input type="email" class="form-control" id="email" placeholder="usuario@ejemplo.com">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" form="userForm" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

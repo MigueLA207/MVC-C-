@@ -1,0 +1,98 @@
+@page
+@model test_cs.Views.General.General
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+
+    <h1>Detalles del niche</h1>
+
+    
+    <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="general-tab" data-bs-toggle="tab" data-bs-target="#general-tab-pane" type="button" role="tab" aria-controls="general-tab-pane" aria-selected="true">general</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="residence-tab" data-bs-toggle="tab" data-bs-target="#residence-tab-pane" type="button" role="tab" aria-controls="residence-tab-pane" aria-selected="false">Info de residencia</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Info de contacto</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="general-tab-pane" role="tabpanel" aria-labelledby="general-tab" tabindex="0">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Información general</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card p-2">Nombres</div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card p-2">Apellidos</div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card p-2">Correo</div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card p-2">Numero</div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card p-2">Tipo identificacion</div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card p-2">Genero</div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card p-2">Edad</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="tab-pane fade" id="residence-tab-pane" role="tabpanel" aria-labelledby="general-tab" tabindex="0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Información de residencia</h5>
+                        <div class="row g-3">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card p-2">Telefono</div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card p-2">Celular</div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card p-2">Correo alternativo</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Información de contacto</h5>
+                        <div class="row g-3">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card p-2">Direccion</div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card p-2">Ciudad</div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card p-2">Pais</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+</body>
+</html>
