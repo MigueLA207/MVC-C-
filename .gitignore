@@ -477,7 +477,7 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-# Windows shortcuts
+
 *.lnk
 
 # Vim temporary swap files
